@@ -22,36 +22,16 @@
 #include<iostream>
 using namespace std;
 
-class array1{
+class array {
 	int total_size;
 	int used_size;
-	int* ptr;
 public:
-	array1(int t,int s) {
+	array(int t,int s) {
 		total_size = t;
 		used_size = s;
-		ptr = new int[t];
-
-	}
-	void create() {
-		for (int i = 0;i < used_size;i++) {
-			cout << "Enter the value for" << i + 1 << "element" << endl;
-			cin >> ptr[i];
-		}
-}
-	void show() {
-		for (int i = 0;i < used_size;i++) {
-			cout << "the value of" << i + 1 << "element is" << ptr[i] << endl;
-		}
 
 	}
 };
 int main() {
-	array1 arr(20,5);
-	arr.create();
-	arr.show();
-	return 0;
-
-
 
 }
